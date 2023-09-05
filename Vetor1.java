@@ -22,8 +22,6 @@ public class Vetor1 {
 					}
 				}
 			}
-			
 			leia.close();
 		}
-		
 	}
