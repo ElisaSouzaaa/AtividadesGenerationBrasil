@@ -10,20 +10,18 @@ public class Matriz1 {
 		int valorMatriz[][] = new int [3][3];
 		int soma1 = 0, soma2 = 0;
 		
-		//Pede os valores ao usuário valores principal
 		for(int indiceLinha = 0; indiceLinha < 3; indiceLinha++) {
 			for(int indiceColuna = 0; indiceColuna < 3; indiceColuna++) {
 				System.out.println("Digite um valor para a posição [" + indiceLinha + "][" + indiceColuna + "]: ");
 				valorMatriz[indiceLinha][indiceColuna] = leia.nextInt();
 				
-				//Aqui imprime e soma os valores na diagonal principal
 				if(indiceLinha == indiceColuna) {
 					soma1 += valorMatriz[indiceLinha][indiceColuna];
 				}
 				
-				if (indiceLinha + indiceColuna == 2) {
-                    soma2 += valorMatriz[indiceLinha][indiceColuna];
-                }
+			if (indiceLinha + indiceColuna == 2) {
+                    	soma2 += valorMatriz[indiceLinha][indiceColuna];
+                		}
 			}
 		}
 		
